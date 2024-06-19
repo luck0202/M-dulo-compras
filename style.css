@@ -76,3 +76,107 @@ li{
     width: 350px;
     margin-left: 130px;
 }
+
+/*cotação*/
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.col-6 {
+    flex: 0 0 50%;
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+/*lista*/
+.container {
+	width: 80%;
+	margin: 40px auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.search-bar select {
+	width: 150px;
+	margin-right: 10px;
+}
+
+.search-bar input[type="text"] {
+	width: 200px;
+	margin-right: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.search-bar button[type="button"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.search-bar button[type="button"]:hover {
+	background-color: #3e8e41;
+}
+
+#new-registration-btn {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
+#new-registration-btn:hover {
+	background-color: #0069d9;
+}
+
+#suppliers-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#suppliers-list li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+#suppliers-list li:hover {
+	background-color: #f0f0f0;
+}
