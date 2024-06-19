@@ -123,7 +123,27 @@
                 </div>
 
             </div>
-    
+            <!--Lista-->
+            <div class="container">
+                <h2>Cotações</h2>
+                <div class="search-bar">
+                    <select id="search-field">
+                        <option value="purchase-request">Pedido de compra</option>
+                        <option value="supplier">Fornecedor</option>
+                        <option value="product-code">Código do Produto</option>
+                        <option value="id">ID</option>
+                    </select>
+                    <input placeholder="Search..." id="search-input" type="text">
+                    <button id="search-btn">Pesquisar</button>
+                </div>
+                <a href="novacot.html">
+                    <button id="new-quote-btn">Novo</button>
+                </a>
+
+                <div id="quote-list">
+                    <!-- cotações listadas aqui -->
+                </div>
+            </div>
 
         </div>
         <script src="app.js"></script>

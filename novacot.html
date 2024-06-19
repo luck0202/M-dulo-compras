@@ -125,49 +125,34 @@
             </div>
             <!--formulário-->
             <div class="container">
-                <h2>Inserir Cotação</h2>
+                <h2>Nova Cotação</h2>
                 <form id="quote-form">
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="supplier">Fornecedor</label>
-                            <input type="text" id="supplier" name="supplier" required>
-                            <a href="fornecedor.html">
-                                <button type="button" id="search-supplier" href="cadastroforn.html">Pesquisar</button>
-                            </a>
-
-                        </div>
-                        <div class="col-4">
-                            <label for="cnpj">CNPJ</label>
-                            <input type="text" id="cnpj" name="cnpj" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="product-code">Código do Produto</label>
-                            <input type="text" id="product-code" name="product-code" required>
-                            <a href=""> <!--Colocar a página do estoque de produtos-->
-                                <button type="button" id="search-product" href="">Pesquisar</button>
-                            </a>
-
-                        </div>
-                        <div class="col-4">
-                            <label for="quantity">Quantidade</label>
-                            <input type="number" id="quantity" name="quantity" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-4">
-                            <label for="price">Preço</label>
-                            <input type="number" id="price" name="price" required step="0.01">
-                            <span>R$</span>
-                        </div>
-                        <div class="col-4">
-                            <label for="deadline">Prazo</label>
-                            <input type="date" id="deadline" name="deadline" required>
-                        </div>
-                    </div>
-                    <button type="submit">Inserir Cotação</button>
+                    <label for="quote-id">Cotação ID</label>
+                    <input readonly="" value="" name="quote-id" id="quote-id" type="text"><br><br>
+                    <label for="supplier">Fornecedor</label>
+                    <input required="" name="supplier" id="supplier" type="text">
+                    <a href="fornecedor.html">
+                        <button id="search-supplier" type="button">Pesquisar</button><br><br>
+                    </a>
+                    <label for="cnpj">CNPJ</label>
+                    <input required="" name="cnpj" id="cnpj" type="text">
+                    <a href="fornecedor.html">
+                        <button id="search-cnpj" type="button">Pesquisar</button><br><br>
+                    </a>
+                    <label for="product-code">Código do Produto</label>
+                    <input required="" name="product-code" id="product-code" type="text">
+                    <a href=""> <!--tela do estoque-->
+                        <button id="search-product-code" type="button">Pesquisar</button><br><br>
+                    </a>
+                    <label for="quantity">Quantidade</label>
+                    <input required="" name="quantity" id="quantity" type="number"><br><br>
+                    <label for="price">Preço</label>
+                    <input required="" name="price" id="price" type="number" step="0.01"><br><br>
+                    <label for="deadline">Prazo</label>
+                    <input required="" name="deadline" id="deadline" type="date"><br><br>
+                    <button id="submit-quote" type="submit">Inserir Cotação</button>
                 </form>
+                <div id="quote-number"></div>
             </div>
         </div>
 
